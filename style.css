@@ -3,6 +3,7 @@
 }
 body{
     background-color: #ECF0F3;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 /* HEADER */
@@ -33,4 +34,43 @@ h1{
 .navbar-brand > a:hover{
     text-decoration: none;
     color: #42a1f5;
+}
+#nav-list{
+    margin-top: 10px;
+}
+#nav-list a {
+    color: #42a1f5;
+    text-align: center;
+}
+.nav-hover:hover{
+    background-color: #ECF0F3;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px 5px rgb(191, 190, 224);
+    
+}
+#nav-list a span{
+    font-size: 1.8em;
+}
+
+#phone{
+    margin-top: 5px;
+    margin-left: 30px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 5px rgb(188, 195, 207);
+}
+#phone a span{
+    font-size: 1em;
+    cursor: pointer;
+}
+#phone a{
+    text-align: right;
+    padding-bottom: 0;
+}
+
+#phone div{
+    color: black;
+    text-align: right;
+    padding-right: 15px;
 }
