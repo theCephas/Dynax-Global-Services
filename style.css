@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ECF0F3;
+}
+
+/* HEADER */
+#header-nav{
+   background-color: white;
+   border-radius: 0; 
+   border: 0;
+   position: static;
+}
+
+#logo-img{
+    width: 150px;
+    margin: 10px 0px 5px 0px;
+}
+h1{
+    text-transform: uppercase;
+    line-height: 35px;
+    color: #42a1f5;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+.navbar-brand{
+    margin-bottom: 100px;
+}
+.navbar-brand > p{
+    vertical-align: middle;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.navbar-brand > a:hover{
+    text-decoration: none;
+    color: #42a1f5;
+}
