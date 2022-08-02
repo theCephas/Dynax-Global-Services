@@ -11,7 +11,6 @@ body{
    background-color: white;
    border-radius: 0; 
    border: 0;
-   position: static;
 }
 
 #logo-img{
@@ -22,10 +21,11 @@ h1{
     text-transform: uppercase;
     line-height: 35px;
     color: #42a1f5;
-    font-family: 'Chau Philomene One', sans-serif;
+    font-family: 'Cormorant SC', sans-serif;
+    font-weight: 600;
 }
 .navbar-brand{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .navbar-brand > p{
     vertical-align: middle;
@@ -36,12 +36,13 @@ h1{
     color: #42a1f5;
 }
 #nav-list{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #nav-list a {
     color: #42a1f5;
     text-align: center;
 }
+
 .nav-hover:hover{
     background-color: #ECF0F3;
     border: 0;
@@ -73,4 +74,86 @@ h1{
     color: black;
     text-align: right;
     padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #42a1f5;
+}
+
+   /* LANDING PAGE INFO */
+main{
+    min-height: 50vh;
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 5px rgb(188, 195, 207);
+}
+.clean-img{
+    margin: 20px 20px 20px 0px;
+    margin-bottom: 30px;
+    
+}
+
+h2{
+    margin-left: 20px;
+    font-size: 5rem;
+    width: 500px;
+    font-weight: 500;
+    font-family: 'Cormorant SC', sans-serif;
+    background: -webkit-linear-gradient(150deg,#42adf5, #0a4974);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text{
+    margin-left: 21px;
+    color: rgb(238, 159, 55);
+    width: 500px;
+    font-size: 1.2em;
+}
+.lineUp{
+    animation: 3s anim-lineUp ease-out 1;
+}
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #nav-list{
+        margin-top: 0px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .clean-img{
+        margin: 20px 20px 20px 0px;
+    }   
+    h2{
+        font-size: 4rem;
+        margin-left: 0px;
+        width: 500px;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .text{
+        text-align: center;
+        margin-left: 0px;
+    }
 }
