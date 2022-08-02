@@ -11,6 +11,7 @@ body{
    background-color: white;
    border-radius: 0; 
    border: 0;
+   width: 100%;
 }
 
 #logo-img{
@@ -83,15 +84,16 @@ h1{
    /* LANDING PAGE INFO */
 main{
     min-height: 50vh;
+    width: 100vw;
     background-color: white;
     padding-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 5px rgb(188, 195, 207);
 }
 .clean-img{
-    margin: 20px 20px 20px 0px;
-    margin-bottom: 30px;
-    
+    margin: 20px 0px 20px 0px;
+    padding-right: 20px;
+    width: 100%;
 }
 
 h2{
@@ -101,7 +103,7 @@ h2{
     font-weight: 500;
     font-family: 'Cormorant SC', sans-serif;
     background: -webkit-linear-gradient(150deg,#42adf5, #0a4974);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 .text{
@@ -140,20 +142,67 @@ h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        width: 70%;
     }
     .clean-img{
-        margin: 20px 20px 20px 0px;
+        width: 70%;
+        margin: auto;
+        padding-top: 20px;
     }   
     h2{
         font-size: 4rem;
-        margin-left: 0px;
-        width: 500px;
+        width: 70%;
+        margin: auto;
         text-align: center;
         padding-top: 40px;
     }
     .text{
         text-align: center;
-        margin-left: 0px;
+        padding-top: 20px;
+        margin: auto;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 767px){
+    main{
+        width: 90%;
+    }
+    .clean-img{
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+    } 
+    h2{
+        font-size: 4rem;
+        width: 80%;
+    }
+    .text{
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 560px){
+    main{
+        width: 100%;
+    }
+    .clean-img{
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-left: 50px;
+    }
+    h2{
+        padding-top: 30px;
+        margin: auto;
+        font-size: 3rem;
+        width: 80%;
+        text-align: center;
+    }
+    .text{
+        padding-top: 20px;
+        width: 80%;
+        margin: auto;
     }
 }
