@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -88,8 +90,10 @@ h1{
 
    /* LANDING PAGE INFO */
 main{
-    min-height: 50vh;
+    
     width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: white;
     padding-bottom: 20px;
     border-radius: 10px;
@@ -142,6 +146,8 @@ h2{
 footer{
     background-color: white;
     margin-top: 50px;
+    padding-bottom: 0px;
+    height: 100%;
 }
 
 @media screen and (max-width: 992px) {
