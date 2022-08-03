@@ -43,6 +43,11 @@ h1{
     color: #42a1f5;
     text-align: center;
 }
+#collapsable-nav a{
+    font-size: .9em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .nav-hover:hover{
     background-color: #ECF0F3;
@@ -84,22 +89,23 @@ h1{
    /* LANDING PAGE INFO */
 main{
     min-height: 50vh;
-    width: 100vw;
+    width: 100%;
     background-color: white;
     padding-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0px 2px 5px 5px rgb(188, 195, 207);
+    box-shadow: 0px 2px 5px 9px rgb(188, 195, 207);
 }
 .clean-img{
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 0px 0px;
+    float: right;
     padding-right: 20px;
-    width: 100%;
+    width: 40%; 
 }
 
 h2{
     margin-left: 20px;
     font-size: 5rem;
-    width: 500px;
+    width: 500px; 
     font-weight: 500;
     font-family: 'Cormorant SC', sans-serif;
     background: -webkit-linear-gradient(150deg,#42adf5, #0a4974);
@@ -133,6 +139,11 @@ h2{
     }
 }
 
+footer{
+    background-color: white;
+    margin-top: 50px;
+}
+
 @media screen and (max-width: 992px) {
     #nav-list{
         margin-top: 0px;
@@ -142,9 +153,10 @@ h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 70%;
+        width: 60%;
     }
     .clean-img{
+        float: initial;
         width: 70%;
         margin: auto;
         padding-top: 20px;
@@ -162,12 +174,19 @@ h2{
         margin: auto;
         width: 70%;
     }
+    footer{
+        margin-top: 50px;
+        margin: auto;
+        padding-top: 30px;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 767px){
     main{
         width: 90%;
     }
     .clean-img{
+        float: initial;
         width: 80%;
         margin: auto;
         padding-top: 20px;
@@ -181,12 +200,19 @@ h2{
         margin: auto;
         padding-top: 20px;
     }
+    footer{
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 560px){
     main{
         width: 100%;
     }
     .clean-img{
+        float: initial;
         width: 80%;
         margin: auto;
         padding-top: 20px;
