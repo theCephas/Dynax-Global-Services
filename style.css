@@ -14,6 +14,7 @@ body{
    border-radius: 0; 
    border: 0;
    width: 100%;
+   margin-bottom: 50px;
 }
 
 #logo-img{
@@ -89,21 +90,22 @@ h1{
 }
 
    /* LANDING PAGE INFO */
-main{
+main .jumbotron{
     
-    width: 100%;
+    /* width: 100%;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
     background-color: white;
-    padding-bottom: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 9px rgb(188, 195, 207);
 }
 .clean-img{
-    margin: 20px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     float: right;
     padding-right: 20px;
-    width: 40%; 
+    width: 50%; 
 }
 
 h2{
@@ -146,10 +148,16 @@ h2{
 footer{
     background-color: white;
     margin-top: 50px;
-    padding-bottom: 0px;
-    height: 100%;
+    padding-top: 10em;
+    padding-bottom: 5em;
+    height: 25em;
 }
-
+h4{
+    font-weight: bold;
+}
+.touch h4 >p{
+    color: black;
+}
 @media screen and (max-width: 992px) {
     #nav-list{
         margin-top: 0px;
@@ -183,8 +191,17 @@ footer{
     footer{
         margin-top: 50px;
         margin: auto;
-        padding-top: 30px;
+        padding-top: 10em;
+        padding-bottom: 2em;
         text-align: center;
+        height: 50em;
+    }
+    
+    .last-para{
+        padding-top: 2em;
+    }
+    .touch{
+        padding-top: 2em;
     }
 }
 @media screen and (max-width: 767px){
@@ -211,6 +228,9 @@ footer{
         flex-direction: column;   
         align-items: center;
         justify-content: center;
+        padding-top: 15em;
+        padding-bottom: 15em;
+        height: 50vw;
     }
 }
 @media screen and (max-width: 560px){
@@ -236,5 +256,14 @@ footer{
         padding-top: 20px;
         width: 80%;
         margin: auto;
+    }
+    .last-img{
+        padding-top: 4em;
+    }
+    .last-para{
+        padding-top: 1em;
+    }
+    footer{
+        height: 50em;
     }
 }
