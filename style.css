@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ECF0F3;
+    background-color: #3b9ae1;
     font-family: 'Quattrocento Sans', sans-serif;
+    min-height: 100vh;
 }
 
 /* HEADER */
@@ -40,6 +41,7 @@ h1{
     color: #42a1f5;
 }
 #nav-list{
+    vertical-align: middle;
     margin-top: 20px;
 }
 #nav-list a {
@@ -48,10 +50,9 @@ h1{
 }
 #collapsable-nav a{
     font-size: .9em;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-
 .nav-hover:hover{
     background-color: #ECF0F3;
     border: 0;
@@ -87,29 +88,24 @@ h1{
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
     border: 1px solid #42a1f5;
-}
+}    /* END OF HEADER STYLE */
 
    /* LANDING PAGE INFO */
 main .jumbotron{
-    
-    /* width: 100%;
+    width: 100%;
     margin-top: 50px;
-    margin-bottom: 50px; */
+    margin-bottom: 50px;
     background-color: white;
     padding-top: 70px;
     padding-bottom: 70px;
     border-radius: 10px;
-    box-shadow: 0px 2px 5px 9px rgb(188, 195, 207);
 }
 .clean-img{
-    margin: 0px 0px 0px 0px;
     float: right;
-    padding-right: 20px;
-    width: 50%; 
+    width: 40%; 
 }
 
 h2{
-    margin-left: 20px;
     font-size: 5rem;
     width: 500px; 
     font-weight: 500;
@@ -119,13 +115,13 @@ h2{
     -webkit-text-fill-color: transparent;
 }
 .text{
-    margin-left: 21px;
     color: rgb(235, 52, 52);
     width: 500px;
     font-size: 1.2em;
+    line-height: 30px;
 }
 .lineUp{
-    animation: 3s anim-lineUp ease-out 1;
+    animation: 6s anim-lineUp ease-out 1;
 }
 @keyframes anim-lineUp {
     0% {
@@ -147,7 +143,11 @@ h2{
 .call{
     background-color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
+    width: auto;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 9px rgb(211, 210, 223);
 }
 .call > a{
     margin-left: 20px;
@@ -178,15 +178,51 @@ h2{
         opacity: 0;
     }
 }
-footer{
-    background-color: white;
+footer.panel-footer{
+    background-color: #fffffb;
     margin-top: 50px;
-    padding-top: 10em;
-    padding-bottom: 5em;
-    height: 25em;
+}
+.row{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 h4{
     font-weight: bold;
+}
+
+#box1-text, #box2-text{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    transition: 0.5s;
+    transition-property: transform;
+}
+#box1-text{
+    background: url('./images/project\(2\).jpg') no-repeat;
+    background-position: center;
+}
+#box2-text{
+    background: url('./images/project\(1\).jpg') no-repeat;
+    background-position: center;
+}
+#box1-text:hover, #box2-text:hover{
+    transform: scale(1.06);
+    box-shadow: 0px 2px 5px 7px rgb(73, 73, 73);
+}
+#box1-text span, #box2-text span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
 }
 
 @media screen and (max-width: 992px) {
@@ -199,35 +235,34 @@ h4{
         justify-content: center;
         align-items: center;
         width: 60%;
+        padding-top: 50px;
     }
     .clean-img{
         float: initial;
-        width: 70%;
+        width: 100%;
         margin: auto;
         padding-top: 20px;
+        padding-right: 0px;
     }   
     h2{
-        font-size: 4rem;
-        width: 70%;
+        font-size: 4.3rem;
         margin: auto;
         text-align: center;
         padding-top: 40px;
     }
     .text{
+        font-size: 1.7rem;
+        line-height: 30px;
         text-align: center;
         padding-top: 20px;
         margin: auto;
-        width: 70%;
+        
     }
     footer{
         margin-top: 50px;
         margin: auto;
-        padding-top: 10em;
-        padding-bottom: 2em;
         text-align: center;
-        height: 50em;
     }
-    
     .last-para{
         padding-top: 2em;
     }
@@ -250,19 +285,21 @@ h4{
         width: 80%;
     }
     .text{
+        font-size: 1.5rem;
         width: 80%;
         margin: auto;
         padding-top: 20px;
+    }
+    #box1-text{
+        margin-bottom: 50px;
     }
     footer{
         display: flex;
         flex-direction: column;   
         align-items: center;
         justify-content: center;
-        padding-top: 15em;
-        padding-bottom: 15em;
-        height: 50vw;
     }
+
 }
 @media screen and (max-width: 560px){
     main{
@@ -274,7 +311,6 @@ h4{
         margin: auto;
         padding-top: 20px;
         padding-bottom: 30px;
-        margin-left: 50px;
     }
     h2{
         padding-top: 30px;
@@ -287,14 +323,5 @@ h4{
         padding-top: 20px;
         width: 80%;
         margin: auto;
-    }
-    /* .last-img{
-        padding-top: 1em;
-    }
-    .last-para{
-        padding-top: em;
-    } */
-    footer{
-        height: 35em;
     }
 }
