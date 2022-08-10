@@ -1,7 +1,12 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
 .about{
     text-align: left;
     font-family: 'Cormorant SC', sans-serif;
-    width: ;
+    /* display: flex; */
 }
 h3{
     font-size: 5em;
@@ -41,6 +46,8 @@ h3{
 article{
     color: black;
     line-height: 30px;
-    width: 500px;
     font-family: 'Quattrocento Sans', sans-serif;
+}
+.boxes{
+	margin: auto;
 }
